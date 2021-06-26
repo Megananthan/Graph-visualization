@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Graphs</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 
+OneTel Template
+http://www.templatemo.com/tm-468-onetel
+-->
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/nivo-lightbox.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/nivo_themes/default/default.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/templatemo-style.css')}}">
+	<!-- google web font css -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	
+<!-- navigation -->
+
+<div class="container" style="position: fixed;margin-left: 1400px;max-width: 500px;">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<!-- <a href="#" class="navbar-brand"><img src="" class="img-responsive" alt="logo"></a> -->
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href=/ class="active">HOME</a></li>
+				<li><a href=about>LEARN MORE</a></li>
+				<li><a href=portfolio>REAL TIME</a></li>
+				<li><a href=contact>CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</div>		
+
+<!-- home section -->
+<div id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-3"></div>
+			<div class="col-md-7 col-sm-9">
+				<h3 style="margin-top: -10%!important;margin-left: -75% !important;font-size:75px;margin-bottom: 50px;text-align: center!important;">Graph Traversals</h3>
+				<h3 style="margin-left: -75% !important;font-size:75px;margin-bottom: 50px;text-align: center!important;">&</h3>
+				<h1 style="margin-left: -43% !important;font-size:70px;">Representations</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- divider section -->
+<div class="divider">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="divider-wrapper divider-one">
+					<i class="fa fa-laptop"></i>
+					<h2>Responsive</h2>
+					<p>Graph can be created proportionally to the quantity it needs to represent.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="divider-wrapper divider-two">
+					<i class="fa fa-mobile"></i>
+					<h2>Big Data</h2>
+					<p>Puts large sums of data into visual form for easy understanding.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12">
+				<div class="divider-wrapper divider-three">
+					<i class="fa fa-life-ring"></i>
+					<h2>Easy to use</h2>
+					<p>they can be easily used for finding shortest paths, project planning, etc.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- about section -->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<img style="margin-top: 155px;margin-bottom: 20px;"src="/static/images/undirectedgraph1.png" class="img-responsive" alt="about img">
+				
+				<p>In the Graph shown, the set of vertices V = {0,1,2,3,4} and the set of edges E = {01, 12, 23, 34, 04, 14, 13}.</p>
+			</div>
+			<div class="col-md-6 col-sm-12 about-des">
+				<h2>Graph Data Structure And Algorithms</h2>
+				<p>A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph can be defined as,</p>
+				<b>A Graph consists of a finite set of vertices(or nodes) and set of Edges which connect a pair of nodes.</b>
+				<p></p>
+				<p>Graphs are used to solve many real-life problems. Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks like linkedIn, Facebook. For example, in Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name, gender, locale etc.</p>
+				
+				<a href="about" class="btn btn-default">LEARN MORE</a>
+			</div>
+		</div>
+		<div class="col-md-12 col-sm-12 mt20">
+			<h3>Maps & Direction</h3>
+			<br>
+			<p>One of the real world application of graphs is Maps. If you want to go from one loction to another , there may be multiple ways to reach our destination. Then the map shows the best direction which is shortest path and with good condition. Below we have given a representation of map. However we could not use google API as it paid.</p>
+			<div class="google_map mt20">
+				<div id="map-canvas">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- portfolio section -->
+<!-- <div id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<h2>Recent Projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+			</div>
+         </div>
+         
+         <div class="row mt30">
+            
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img1.jpg" alt="portfolio img"></a>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img2.jpg" alt="portfolio img"></a>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img3.jpg" alt="portfolio img"></a>
+			</div>
+            
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img4.jpg" alt="portfolio img"></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img5.jpg" alt="portfolio img"></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-6">
+				<a href="images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img6.jpg" alt="portfolio img"></a>
+			</div>
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<a href="images/portfolio-img7.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img7.jpg" alt="portfolio img"></a>
+			</div>
+			<div class="col-md-12 col-sm-12">
+				<a rel="nofollow" href="http://www.templatemo.com/tag/darkgray" class="btn btn-default">View More</a>
+			</div>
+		</div>
+	</div>
+</div>		 -->
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+        
+			<div class="col-md-5 col-sm-4">
+				<!-- <img src="images/logo.png" class="img-responsive" alt="logo"> -->
+				<p>Onetel is free Bootstrap v3.3.5 HTML5 layout from 
+                <a href="http://www.facebook.com/templatemo" target="_blank">templatemo</a> website.
+                Feel free to use it for your website.</p>
+				<p><i class="fa fa-phone"></i> 9500858582</p>
+				<p><i class="fa fa-envelope-o"></i> megananthan@gmail.com</p>
+				<p><i class="fa fa-envelope-o"></i> saic@gmail.com</p>
+				<p><i class="fa fa-envelope-o"></i> shashank@gmail.com.</p>
+				<p><i class="fa fa-envelope-o"></i> jsuresh@gmail.com</p>
+              <p><i class="fa fa-globe"></i> www.amrita.com</p>
+			</div>
+
+			<div class="col-md-3 col-sm-4">
+				<h3>Useful Links</h3>
+				<p><a href="#">HTML5 Templates</a></p>
+				<p><a href="#">CSS3 Tricks</a></p>
+				<p><a href="#">Design Blog</a></p>
+				<p><a href="#">Animations</a></p>
+			</div>
+            
+			<div class="col-md-4 col-sm-4 newsletter">
+				<h3>Newsletter</h3>
+				<p>We spend hours to improve our graph design for easier and faster implementation and innovating new designs for them, subscribe to keep yourself updated and get firsthand information about us and our designs.</p>
+				<div class="input-group">
+           	    	<form action="#" method="post">
+                        <input name="email" type="email" placeholder="Enter your email" class="form-control" autorequired>
+                    	<button type="submit" name="submit" class="btn email">Submit</button>
+                  	</form>
+				 </div>
+			</div>
+            
+		</div>
+	</div>
+</footer>
+
+<!-- copyright section -->
+<div class="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<p>Copyright © 2084 XForce</p>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<ul class="social-icons">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+					<li><a href="#" class="fa fa-dribbble"></a></li>
+					<li><a href="#" class="fa fa-pinterest"></a></li>
+					<li><a href="#" class="fa fa-behance"></a></li>
+					<li><a href="#" class="fa fa-envelope-o"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- javascript js -->	
+
+<script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/custom.js')}}"></script>
+<script src="{{url_for('static', filename='js/nivo-lightbox.min.js')}}"></script>
+</body>
+</html>

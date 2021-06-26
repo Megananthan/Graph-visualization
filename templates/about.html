@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Graphs</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 
+OneTel Template
+http://www.templatemo.com/tm-468-onetel
+-->
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/nivo-lightbox.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/nivo_themes/default/default.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/templatemo-style.css')}}">
+	<!-- google web font css -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	
+<!-- navigation -->
+
+<div class="container" style="position: fixed;margin-left: 1400px;max-width: 500px;">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<!-- <a href="#" class="navbar-brand"><img src="images/logo.png" class="img-responsive" alt="logo"></a> -->
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href=/ class="active">HOME</a></li>
+				<li><a href=about>LEARN MORE</a></li>
+				<li><a href=portfolio>REAL TIME</a></li>
+				<li><a href=contact>CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</div>		
+
+<!-- about header section -->
+<div id="about-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12"></div>
+			<h3 style="font-size:75px;text-align: center;margin-top:-10%;">Traversals</h3>
+		</div>
+	</div>
+</div>
+
+<!-- team section -->
+<div id="team">
+	<div class="container">
+    
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<h2>Breadth First Search or BFS for a Graph</h2>
+                <p>Breadth First Traversal (or Search) for a graph is similar to Breadth First Traversal of a tree. The only catch here is, unlike trees, graphs may contain cycles, so we may come to the same node again. To avoid processing a node more than once, we use a boolean visited array. For simplicity, it is assumed that all vertices are reachable from the starting vertex.</p>
+			<br>
+			</div>
+         </div>
+		 <img style="margin-left: 300px;"src="/static/images/bfs-5.png" class="rightside"  ><br>
+
+		 <div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<p></p><br>
+                <p>For example, in the following graph, we start traversal from vertex 2. When we come to vertex 0, we look for all adjacent vertices of it. 2 is also an adjacent vertex of 0. If we don’t mark visited vertices, then 2 will be processed again and it will become a non-terminating process. A Breadth First Traversal of the following graph is 2, 0, 3, 1.</p>
+				<p>
+					Time complexity of BFS is <b>O(V + E)</b>
+				</p>
+				<br>
+			</div>
+         </div>
+
+
+		 <div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<h2>Depth First Search or DFS for a Graph</h2>
+                <p>Depth First Traversal (or Search) for a graph is similar to Depth First Traversal of a tree. The only catch here is, unlike trees, graphs may contain cycles, a node may be visited twice. To avoid processing a node more than once, use a boolean visited array.</p>
+			<br>
+			</div>
+         </div>
+		 <img style="margin-left: 220px;"src="/static/images/dfs1.gif" class="rightside2"  ><br>
+
+		 <div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<p></p><br>
+                <p>Depth-first search is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking. So the basic idea is to start from the root or any arbitrary node and mark the node and move to the adjacent unmarked node and continue this loop until there is no unmarked adjacent node. Then backtrack and check for other unmarked nodes and traverse them. Finally print the nodes in the path.</p>
+				<p>
+					Time complexity of DFS is <b>O(V + E)</b>
+				</p>
+				<br>
+			</div>
+         </div>
+
+
+
+         
+         <!-- <div class="row mt30">
+			<div class="col-md-4 col-sm-4 col-xs-9">
+				<div class="team-wrapper">
+					<img src="images/team1.jpg" class="img-responsive" alt="team img">
+					<h3>LINDA</h3>
+					<h4>Creative Director</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismo.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-9">
+				<div class="team-wrapper">
+					<img src="images/team2.jpg" class="img-responsive" alt="team img">
+					<h3>JULIA</h3>
+					<h4>UX Designer</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismo.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-9">
+				<div class="team-wrapper">
+					<img src="images/team3.jpg" class="img-responsive" alt="team img">
+					<h3>MARY</h3>
+					<h4>Frontend Developer</h4>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismo.</p>
+				</div>
+			</div>
+         </div> -->
+         
+         <div class="row mt30"> 
+			<div class="col-md-12 col-sm-12">
+				<hr>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h3>Design Studio</h3>
+				<p>We have used a couple of tools to implement the design for this website, some of which have given the black theme we went for and enhanced the look of the website making it more attractive and giving the user a better user interface experience. The tools we used are as such</p>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<strong>HTML5 &AMP; CSS3</strong>
+				<span class="pull-right">90%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+					</div>
+				<strong>BOOTSTRAP</strong>
+				<span class="pull-right">80%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+					</div>
+				<strong>UX Design</strong>
+				<span class="pull-right">60%</span>
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>		
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+        
+			<div class="col-md-5 col-sm-4">
+				<!-- <img src="images/logo.png" class="img-responsive" alt="logo"> -->
+				<p>Onetel is free Bootstrap v3.3.5 HTML5 layout from 
+                <a href="http://www.facebook.com/templatemo" target="_blank">templatemo</a> website.
+                Feel free to use it for your website.</p>
+				<p><i class="fa fa-phone"></i> 9500858582</p>
+				<p><i class="fa fa-envelope-o"></i> megananthan@gmail.com</p>
+				<p><i class="fa fa-envelope-o"></i> saic@gmail.com</p>
+				<p><i class="fa fa-envelope-o"></i> shashank@gmail.com.</p>
+				<p><i class="fa fa-envelope-o"></i> jsuresh@gmail.com</p>
+              <p><i class="fa fa-globe"></i> www.amrita.com</p>
+			</div>
+
+			<div class="col-md-3 col-sm-4">
+				<h3>Useful Links</h3>
+				<p><a href="#">HTML5 Templates</a></p>
+				<p><a href="#">CSS3 Tricks</a></p>
+				<p><a href="#">Design Blog</a></p>
+				<p><a href="#">Animations</a></p>
+			</div>
+            
+			<div class="col-md-4 col-sm-4 newsletter">
+				<h3>Newsletter</h3>
+				<p>We spend hours to improve our graph design for easier and faster implementation and innovating new designs for them, subscribe to keep yourself updated and get firsthand information about us and our designs.</p>
+				<div class="input-group">
+           	    	<form action="#" method="post">
+                        <input name="email" type="email" placeholder="Enter your email" class="form-control" autorequired>
+                    	<button type="submit" name="submit" class="btn email">Submit</button>
+                  	</form>
+				 </div>
+			</div>
+            
+		</div>
+	</div>
+</footer>
+
+<!-- copyright section -->
+<div class="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<p>Copyright © 2084 XForce</p>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<ul class="social-icons">
+					<li><a href="#" class="fa fa-facebook"></a></li>
+					<li><a href="#" class="fa fa-twitter"></a></li>
+					<li><a href="#" class="fa fa-dribbble"></a></li>
+					<li><a href="#" class="fa fa-pinterest"></a></li>
+					<li><a href="#" class="fa fa-behance"></a></li>
+					<li><a href="#" class="fa fa-envelope-o"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- javascript js -->	
+<script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/custom.js')}}"></script>
+<script src="{{url_for('static', filename='js/nivo-lightbox.min.js')}}"></script>
+
+</body>
+</html>
